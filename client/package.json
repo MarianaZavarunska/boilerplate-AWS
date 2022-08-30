@@ -28,7 +28,6 @@
     "redux-thunk": "^2.3.0",
     "typescript": "^3.7.5"
   },
-  "proxy": "http://server:5500",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

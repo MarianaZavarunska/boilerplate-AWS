@@ -1,3 +1,4 @@
+
 {
   "name": "server",
   "version": "0.0.1",
@@ -53,7 +54,7 @@
     "prettier": "^1.19.1",
     "supertest": "^4.0.2",
     "ts-jest": "26.2.0",
-    "ts-loader": "^6.2.1",
+    "ts-loader": "^9.3.1",
     "ts-node": "9.0.0",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^3.7.4"
