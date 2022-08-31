@@ -2,9 +2,13 @@ import axios from 'axios';
 import { UserCreds } from '../../types';
 import * as utils from '../../utils';
 
+const axiosService = axios.create({
+  baseURL: "http://localhost:5500",
+});
+
 export const registerUser = async (creds: UserCreds) => {
   try {
-    const res = await axios({
+    const res = await axiosService({
       method: 'POST',
       url: '/api/register',
       data: creds
@@ -21,9 +25,9 @@ export const registerUser = async (creds: UserCreds) => {
 
 export const loginUser = async (creds: UserCreds) => {
   try {
-    const res = await axios({
+    const res = await axiosService({
       method: 'POST',
-      url: '/api/login',
+      url:'/api/login',
       data: creds
     });
 
@@ -39,7 +43,7 @@ export const loginUser = async (creds: UserCreds) => {
 export const getProfile = async (token: string) => {
   try {
     utils.setAxiosAuthToken(token);
-    const res = await axios({
+    const res = await axiosService({
       method: 'GET',
       url: '/api/profile',
       headers: {

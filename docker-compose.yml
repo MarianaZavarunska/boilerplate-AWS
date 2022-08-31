@@ -35,9 +35,9 @@ services:
     networks:
       - database
     environment:
-      - POSTGRES_USER=admin
-      - POSTGRES_PASSWORD=admin
-      - POSTGRES_DB=pern_db
+      - POSTGRES_USER=postgers
+      - POSTGRES_PASSWORD=cesvad-3kuRki-vejwap
+      - POSTGRES_DB=postgers
     volumes:
       - ./server/database/data/prod:/var/lib/postgresql/data/
     restart: always

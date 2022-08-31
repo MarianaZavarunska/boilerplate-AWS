@@ -1,11 +1,11 @@
 {
   "type": "postgres",
-  "host": "postgres_db",
-  "username": "admin",
-  "password": "admin",
+  "host": "rds-boilerplate-aws.cja2a2zbzxrd.us-east-1.rds.amazonaws.com",
+  "username": "postgres",
+  "password": "cesvad-3kuRki-vejwap",
   "synchronize": true,
   "logging": true,
-  "database": "demo",
+  "database": "postgres",
   "port": 5432,
   "entities": ["./src/**/*.entity.ts", "./**/*.entity.js"]
 }
